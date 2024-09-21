@@ -1,0 +1,44 @@
+.home-banner {
+  height: 400px;
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img {
+  border: 1px solid red;
+}
+
+.img-container img:first-child {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.img-container img:nth-child(2) {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+
+.img-container img:nth-child(3) {
+  position: absolute;
+  top: 200px;
+  left: 70px;
+}
