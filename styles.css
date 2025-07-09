@@ -1,8 +1,12 @@
+body {
+  background-color: #F9FAFB;
+}
 
 .home-banner {
   height: 400px;
   width: 100%;
-  background-color: gray;
+  background-color: #1E2A38;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,4 +42,16 @@
   position: absolute;
   top: 100px;
   left: 70px;
+}
+
+.navbar {
+  background-color: #3C91E6;
+}
+
+.navbar .nav-link {
+  color: #F4C95D;
+}
+
+.navbar .navbar-toggler {
+  background-color: white;
 }
