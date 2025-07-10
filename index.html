@@ -13,13 +13,14 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-md">
-        <a class="navbar-brand" id="pixiu-logo" href="#">
+    <!-- TODO: cut the min height, split the contact us and socials and center it. -->
+    <nav class="navbar navbar-expand-md">
+      <div class="container-sm">
+        <a class="navbar-brand d-sm-flex d-md-none" id="pixiu-logo" href="#">
           <img src="./assets/pixiu_logo.png" alt="Pixiu Trading Logo" height="40" width="50" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff" height="30" width="30"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2">
@@ -42,18 +43,27 @@
   </header>
   <main>
     <section class="container-fluid home-banner">
-      <h1> Pixiu Trading </h1>
-      <h6>Your Partner in Market Excellence</h6>
     </section>
+    <div class="container-sm home-banner-overlay">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 home-banner-text" data-aos="fade-right" data-aos-duration="1000">
+          <h1> Pixiu Trading </h1>
+          <h4>Dependable supplies for your everyday business needs.</h4>
+          <button class="btn btn-primary btn-lg mt-3 ask-for-quotation" onclick="window.location.href='#contact-us'">Ask for quotation</button>
+        </div>
+        <div id="large-banner-logo" class="col-lg-6 col-sm-12 d-sm-none d-md-flex justify-content-end">
+          <img src="./assets/pixiu_logo.png" alt="Large logo" data-aos="fade-left" data-aos-duration="1000" />
+        </div>
+      </div>
+    </div>
     <section class="container-md content py-5" id="about-us">
       <div class="row">
-        <!-- <div class="col-6 img-container">
-          <img src="./assets/coffee-1.jpg" alt="Coffee shop" height="200" width="260" />
-          <img src="./assets/thermal1.jpg" alt="Thermal papers" height="300" width="250" />
-          <img src="./assets//truck.jpg" alt="Truck thermal" height="300" width="250" />
-        </div> -->
-        <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-12">
           <h2 class="text-center">About Us</h2>
+        </div>
+      </div>
+      <div class="row flex-lg-row flex-xs-row-reverse">
+        <div class="col-xs-12 col-lg-8" data-aos="fade-up" data-aos-duration="1000">
           <br />
           <p>
             Pixiu Trading is a Filipino-owned business located in Tayabas, Quezon, officially launched on July 28, 2023. It was founded by a former member of the Philippine National Police who entered service on June 16, 2014. Seeking greater purpose, he transferred to the Bangko Sentral ng Pilipinas, but later realized his passion lay in entrepreneurship. This led him to fully resign from public service to establish his own business.
@@ -79,6 +89,9 @@
             Let Pixiu Trading be your go-to partner for your everyday business needs — dependable, ready, and here to grow with you.
           </p>
         </div>
+        <div class="col-xs-12 col-lg-4 text-center" data-aos="fade-left" data-aos-duration="1000">
+          <img src="./assets/truck.jpg" alt="About us image" class="about-us-image" />
+        </div>
       </div>
     </section>
     <section class="container-md py-5" id="products">
@@ -87,31 +100,31 @@
           <h2> Our Products </h2>
         </div>
         <div class="col-12">
-          <div class="row justify-content-center" style="gap: 8px">
-            <div class="col-md-6 col-lg-3 text-center">
+          <div class="row product-list-wrapper">
+            <div class="col-md-6 col-lg-4 text-center">
               <div class="card m-auto" style="width: 18rem;" data-aos="fade-right" data-aos-duration="1500">
                 <img src="./assets/thermal.jpg" class="card-img-top" alt="Thermal Paper Image" height="300" width="200">
                 <div class="card-body">
                   <h5 class="card-title">Thermal Paper</h5>
-                    <p class="card-text">High-quality thermal paper rolls suitable for POS systems, ATMs, and receipt printers. Available in various sizes for reliable, clear printing every time.</p>
+                  <p class="card-text">High-quality thermal paper rolls suitable for POS systems, ATMs, and receipt printers. Available in various sizes for reliable, clear printing every time.</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4">
               <div class="card m-auto" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="1500">
                 <img src="./assets/office-supplies.jpg" class="card-img-top" alt="Office Supplies" height="300" width="200">
                 <div class="card-body">
                   <h5 class="card-title">Office Supplies</h5>
-                    <p class="card-text">Comprehensive range of office supplies including paper, pens, folders, staplers, and more. Everything you need to keep your workspace organized and productive, delivered with reliability and value.</p>
+                  <p class="card-text">Comprehensive range of office supplies including paper, pens, folders, staplers, and more. Everything you need to keep your workspace organized and productive, delivered with reliability and value.</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4">
               <div class="card m-auto" style="width: 18rem;"  data-aos="fade-left" data-aos-duration="1500">
                 <img src="./assets/misc.jpg" class="card-img-top" alt="Miscellaneous Products" height="300" width="200">
                 <div class="card-body">
                   <h5 class="card-title">Sports Supplies</h5>
-                    <p class="card-text">Wide selection of sports supplies including balls, nets, uniforms, and training equipment. Ideal for schools, teams, and recreational activities—quality gear to support every game and practice.</p>
+                  <p class="card-text">Wide selection of sports supplies including balls, nets, uniforms, and training equipment. Ideal for schools, teams, and recreational activities—quality gear to support every game and practice.</p>
                 </div>
               </div>
             </div>
@@ -124,10 +137,10 @@
         
       </div>
     </section> -->
-    <section id="contact-us" class="container-md" data-aos="fade-up" data-aos-duration="1000">
+    <section id="contact-us" class="container-sm" data-aos="fade-up" data-aos-duration="1000">
       <h2> Interested? Contact us </h2>
       <div class="row">
-        <div class="col-md-12 col-lg-6">
+        <div class="col-12">
           <form>
             <div class="form-row">
                 <div class="form-group col-md-6">
@@ -146,33 +159,36 @@
             <button type="submit" class="btn btn-primary mt-3">Send Message</button>
           </form>
         </div>
-
-        <div class="col-md-12 col-lg-6">
-          <div class="d-flex flex-column align-items-center">
-            <h5>Connect with us:</h5>
-            <div class="d-flex gap-3 mt-2">
-              <a href="https://www.facebook.com/PixiuTrading" target="_blank" class="btn d-flex align-items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="container-md">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 d-flex flex-row justify-content-sm-center justify-content-md-start">
+          <h5 class="m-0 d-flex align-items-center">Connect with us:</h5>
+          <div class="d-flex align-items-center">
+              <a href="https://www.facebook.com/PixiuTrading" target="_blank" class="btn d-flex align-items-center gap-2"></a>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 448 512" fill="white"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>
                 Facebook
               </a>
 
-              <a href="https://shopee.ph/pixiutrading#product_list" target="_blank" class="btn d-flex align-items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 512"><path d="M36.8 192l566.3 0c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0L121.7 0c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224l0 160 0 80c0 26.5 21.5 48 48 48l224 0c26.5 0 48-21.5 48-48l0-80 0-160-64 0 0 160-192 0 0-160-64 0zm448 0l0 256c0 17.7 14.3 32 32 32s32-14.3 32-32l0-256-64 0z"/></svg>
+              <a href="https://shopee.ph/pixiutrading#product_list" target="_blank" class="btn d-flex align-items-center gap-2"></a>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 512" fill="white"><path d="M36.8 192l566.3 0c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0L121.7 0c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224l0 160 0 80c0 26.5 21.5 48 48 48l224 0c26.5 0 48-21.5 48-48l0-80 0-160-64 0 0 160-192 0 0-160-64 0zm448 0l0 256c0 17.7 14.3 32 32 32s32-14.3 32-32l0-256-64 0z"/></svg>
                 Shopee
               </a>
 
               <a href="mailto:cs@pixiutrading.com" target="_blank" class="btn d-flex align-items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512" fill="white"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
                 Email
               </a>
-            </div>
           </div>
+        </div>
+        <div class="col-xs-12 col-md-6 d-flex align-items-center justify-content-sm-center justify-content-md-end gap-2">
+          <span> &copy; <span id="year-reserved"></span> Pixiu Trading. All rights reserved. </span>
         </div>
       </div>
     </section>
-  </main>
-  <footer class="container-md text-center">
-    <p>&copy; <span id="year-reserved"></span> Pixiu Trading. All rights reserved.</p>
   </footer>
 </body>
 <script>
@@ -180,14 +196,5 @@ AOS.init();
 const yearReserved = document.getElementById('year-reserved');
 const currentYear = new Date().getFullYear();
 yearReserved.textContent = currentYear;
-
-const logo = document.getElementById('pixiu-logo');
-let rotation = 0;
-
-setInterval(() => {
-  rotation += 360;
-  logo.style.transition = 'transform 1s';
-  logo.style.transform = `rotate(${rotation}deg)`;
-}, 5000);
 </script>
 </html>
