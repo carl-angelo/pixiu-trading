@@ -157,7 +157,7 @@ footer .btn {
   }
 
   .product-list-wrapper {
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 8px;
   }
 
