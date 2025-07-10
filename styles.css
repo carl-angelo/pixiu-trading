@@ -166,7 +166,8 @@ footer .btn {
   }
   
   #large-banner-logo img {
-    height: 80%
+    height: 300px;
+    margin-top: 30px;
   }
 
   #about-us {
