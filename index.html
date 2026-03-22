@@ -3,206 +3,441 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pixiu Trading - Your trusted supplier for thermal paper, imported products, office supplies, and office equipment in the Philippines. Reliable, high-quality business essentials for every workspace.">
-  <meta name="keywords" content="thermal paper, thermal paper supplier, best thermal paper, affordable thermal paper in philippines, best thermal paper in town, thermal paper producer, imported products, office supplies, office equipment, business supplies, Philippines, Pixiu Trading, 80x70mm thermal paper, 57x40mm thermal paper">
+  <meta name="description" content="Pixiu Trading – Philippines' trusted thermal paper supplier. High-quality thermal paper rolls for POS, ATM, and receipts. Serving businesses and LGUs in Quezon and nationwide.">
+  <meta name="keywords" content="thermal paper supplier Philippines, thermal paper rolls, POS thermal paper, 80x70mm thermal paper, 57x40mm thermal paper, BIR receipt paper, ATM paper roll, office supplies Philippines, Pixiu Trading, Tayabas Quezon">
   <meta property="og:image" content="https://carl-angelo.github.io/pixiu-trading/assets/pixiu_logo.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Pixiu Trading">
-  <meta property="og:description" content="Pixiu Trading - Your trusted supplier for thermal paper, imported products, office supplies, and office equipment in the Philippines. Reliable, high-quality business essentials for every workspace.">
-  <title>Pixiu Trading</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="Pixiu Trading – Thermal Paper Supplier Philippines">
+  <meta property="og:description" content="Your trusted source for premium thermal paper rolls, office supplies, and business essentials in the Philippines. Fast delivery. Bulk orders welcome.">
+  <title>Pixiu Trading – Thermal Paper Supplier Philippines</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-  <header>
-    <!-- TODO: cut the min height, split the contact us and socials and center it. -->
-    <nav class="navbar navbar-expand-md">
-      <div class="container-sm">
-        <a class="navbar-brand d-sm-flex d-md-none" id="pixiu-logo" href="#">
-          <img src="./assets/pixiu_logo.png" alt="Pixiu Trading Logo" height="40" width="75" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff" height="30" width="30"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#about-us">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#products">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#contact-us">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section class="container-fluid home-banner">
-    </section>
-    <div class="container-sm home-banner-overlay">
-      <div class="row">
-        <div class="col-lg-6 col-sm-12 home-banner-text" data-aos="fade-right" data-aos-duration="1000">
-          <h1> Pixiu Trading </h1>
-          <h4>Dependable supplies for your everyday business needs.</h4>
-          <button class="btn btn-primary btn-lg mt-3 ask-for-quotation" onclick="window.location.href='#contact-us'">Ask for quotation</button>
-        </div>
-        <div id="large-banner-logo" class="col-lg-6 col-sm-12 d-sm-none d-md-flex justify-content-end">
-          <img src="./assets/pixiu_logo.png" alt="Large logo" data-aos="fade-left" data-aos-duration="1000" />
-        </div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="./assets/pixiu_logo.png" alt="Pixiu Trading Logo" height="40">
+        <span class="brand-name">Pixiu Trading</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center gap-1 me-3">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why-us">Why Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#how-to-order">How to Order</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-accent d-none d-lg-inline-block">Get a Quote</a>
       </div>
     </div>
-    <section class="container-md content py-5" id="about-us">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="text-center">About Us</h2>
-        </div>
-      </div>
-      <div class="row flex-lg-row flex-xs-row-reverse">
-        <div class="col-xs-12 col-lg-8" data-aos="fade-up" data-aos-duration="1000">
-          <br />
-          <p>
-            Pixiu Trading is a Filipino-owned business located in Tayabas, Quezon, officially launched on July 28, 2023. It was founded by a former member of the Philippine National Police who entered service on June 16, 2014. Seeking greater purpose, he transferred to the Bangko Sentral ng Pilipinas, but later realized his passion lay in entrepreneurship. This led him to fully resign from public service to establish his own business.
-          </p>
+  </nav>
+  <main>
 
-          <br/>
-          
-          <p>
-            Pixiu Trading's vision is to provide dependable and high-quality products tailored to the daily needs of businesses. We specialize in thermal papers, custom-printed umbrellas, and various equipment essential for business operations, offering practical solutions that help streamline and support your workflow. <br/>
-
-            At Pixiu Trading, we believe that reliable supplies form the backbone of efficient workspaces. Whether you're a local entrepreneur or a government agency, we are committed to delivering fast, affordable, and flexible service that adapts to your requirements.  
-          </p>
-
-          <br/>
-
-          <p>
-            We are proud partners with JJIM Trading, a trusted supplier of office equipment and business essentials to LGU offices across the region. Together, we strengthen our reach and resources, ensuring we serve you better with quality and consistency.
-          </p>
-
-          <br/>
-
-          <p>
-            Let Pixiu Trading be your go-to partner for your everyday business needs — dependable, ready, and here to grow with you.
-          </p>
-        </div>
-        <div class="col-xs-12 col-lg-4 text-center" data-aos="fade-left" data-aos-duration="1000">
-          <img src="./assets/truck.jpg" alt="About us image" class="about-us-image" />
+    <!-- ==================== HERO ==================== -->
+    <section class="hero-section" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12" data-aos="fade-right" data-aos-duration="900">
+            <span class="badge-label">Philippines' Trusted Supplier</span>
+            <h1 class="hero-title">Premium Thermal Paper <span class="text-accent">Rolls</span> for Every Business</h1>
+            <p class="hero-sub">From POS receipts to ATM rolls — Pixiu Trading delivers high-quality thermal paper and business supplies nationwide, fast and at competitive prices.</p>
+            <div class="hero-actions">
+              <a href="#products" class="btn btn-accent btn-lg">View Products</a>
+              <a href="#contact" class="btn btn-outline-light btn-lg">Request a Quote</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 d-none d-lg-flex justify-content-center" data-aos="fade-left" data-aos-duration="900">
+            <img src="./assets/thermal1.jpg" alt="Thermal Paper Rolls" class="hero-img">
+          </div>
         </div>
       </div>
     </section>
-    <section class="container-md py-5" id="products">
-      <div class="row">
-        <div class="col-12 pb-3 text-center">
-          <h2> Our Products </h2>
-        </div>
-        <div class="col-12">
-          <div class="row product-list-wrapper">
-            <div class="col-md-6 col-lg-3 text-center">
-              <div class="card m-auto" style="width: 18rem;" data-aos="fade-right" data-aos-duration="1500">
-                <img src="./assets/thermal.jpg" class="card-img-top" alt="Thermal Paper Image" height="300" width="200">
-                <div class="card-body">
-                  <h5 class="card-title">Thermal Paper</h5>
-                  <p class="card-text">High-quality thermal paper rolls suitable for POS systems, ATMs, and receipt printers. Available in various sizes for reliable, clear printing every time.</p>
-                </div>
-              </div>
+
+    <!-- ==================== STATS STRIP ==================== -->
+    <section class="stats-strip">
+      <div class="container">
+        <div class="row g-3 text-center justify-content-center">
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="stat-item">
+              <i class="fa-solid fa-box-open stat-icon"></i>
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Orders Fulfilled</div>
             </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="card m-auto" style="width: 18rem;"  data-aos="fade-up" data-aos-duration="1500">
-                <img src="./assets/office-supplies.jpg" class="card-img-top" alt="Office Supplies" height="300" width="200">
-                <div class="card-body">
-                  <h5 class="card-title">Office Supplies</h5>
-                  <p class="card-text">Comprehensive range of office supplies including paper, pens, folders, staplers, and more. Everything you need to keep your workspace organized and productive, delivered with reliability and value.</p>
-                </div>
-              </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-item">
+              <i class="fa-solid fa-building-columns stat-icon"></i>
+              <div class="stat-number">LGU</div>
+              <div class="stat-label">Government Partner</div>
             </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="card m-auto" style="width: 18rem;"  data-aos="fade-left" data-aos-duration="1500">
-                <img src="./assets/misc.jpg" class="card-img-top" alt="Miscellaneous Products" height="300" width="200">
-                <div class="card-body">
-                  <h5 class="card-title">Sports Supplies</h5>
-                  <p class="card-text">Wide selection of sports supplies including balls, nets, uniforms, and training equipment. Ideal for schools, teams, and recreational activities—quality gear to support every game and practice.</p>
-                </div>
-              </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-item">
+              <i class="fa-solid fa-truck-fast stat-icon"></i>
+              <div class="stat-number">Fast</div>
+              <div class="stat-label">Nationwide Delivery</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="stat-item">
+              <i class="fa-solid fa-star stat-icon"></i>
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Quality Guaranteed</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- <section class="container-md pb-5">
-      <div class="row">
-        
+    <!-- ==================== PRODUCTS ==================== -->
+    <section class="section-pad" id="products">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-eyebrow">What We Offer</span>
+          <h2 class="section-title">Our Products</h2>
+          <p class="section-sub">From thermal paper rolls to office and sports supplies — we have everything your business needs.</p>
+        </div>
+        <div class="row g-4 mt-3 justify-content-center align-items-start">
+
+          <!-- Product 1: Thermal Paper (FEATURED) -->
+          <div class="col-lg-5 col-md-10" data-aos="fade-right" data-aos-duration="800">
+            <div class="product-card featured-product">
+              <div class="product-img-wrap">
+                <img src="./assets/thermal.jpg" alt="Thermal Paper Rolls" class="product-img">
+                <span class="featured-badge">Best Seller</span>
+              </div>
+              <div class="product-body">
+                <h3 class="product-title">Thermal Paper Rolls</h3>
+                <p class="product-desc">High-quality thermal rolls for POS systems, ATM machines, credit card terminals, and receipt printers. BIR-compliant and available in all standard sizes.</p>
+                <ul class="product-sizes">
+                  <li><i class="fa-solid fa-check-circle text-accent me-1"></i> 80 &times; 70 mm (Standard POS)</li>
+                  <li><i class="fa-solid fa-check-circle text-accent me-1"></i> 57 &times; 40 mm (Small POS / Cashier)</li>
+                  <li><i class="fa-solid fa-check-circle text-accent me-1"></i> 2&frac14;&quot; &times; 85 ft (Credit Card Terminal)</li>
+                  <li><i class="fa-solid fa-check-circle text-accent me-1"></i> ATM Paper Rolls</li>
+                  <li><i class="fa-solid fa-check-circle text-accent me-1"></i> Custom sizes available</li>
+                </ul>
+                <a href="#contact" class="btn btn-accent mt-2">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="col-lg-7 col-md-10">
+            <div class="row g-4">
+
+              <div class="col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div class="product-card">
+                  <img src="./assets/office-supplies.jpg" alt="Office Supplies" class="product-img-sm">
+                  <div class="product-body">
+                    <h4 class="product-title">Office Supplies</h4>
+                    <p class="product-desc">Complete range of everyday office essentials — paper, pens, folders, staplers, and more. Keep your workspace organized and productive.</p>
+                    <a href="#contact" class="btn btn-outline-primary btn-sm mt-1">Inquire Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="product-card">
+                  <img src="./assets/misc.jpg" alt="Sports Supplies" class="product-img-sm">
+                  <div class="product-body">
+                    <h4 class="product-title">Sports Supplies</h4>
+                    <p class="product-desc">Balls, nets, uniforms, and training gear for schools, sports teams, and LGU events. Ideal for DepEd and government procurement.</p>
+                    <a href="#contact" class="btn btn-outline-primary btn-sm mt-1">Inquire Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <div class="product-card">
+                  <img src="./assets/customized-shirt.jpg" alt="Customized Shirts" class="product-img-sm">
+                  <div class="product-body">
+                    <h4 class="product-title">Customized Shirts</h4>
+                    <p class="product-desc">Custom-printed shirts and uniforms for events, organizations, and businesses. Bulk orders welcome with competitive pricing.</p>
+                    <a href="#contact" class="btn btn-outline-primary btn-sm mt-1">Inquire Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <div class="product-card">
+                  <img src="./assets/coffee-1.jpg" alt="Imported Products" class="product-img-sm">
+                  <div class="product-body">
+                    <h4 class="product-title">Imported Products</h4>
+                    <p class="product-desc">Curated selection of quality imported goods — beverages, lifestyle items, and other business or personal essentials.</p>
+                    <a href="#contact" class="btn btn-outline-primary btn-sm mt-1">Inquire Now</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
-    </section> -->
-    <section id="contact-us" class="container-sm" data-aos="fade-up" data-aos-duration="1000">
-      <h2> Interested? Contact us </h2>
-      <div class="row">
-        <div class="col-12">
-          <form action="mailto:cs@pixiutrading.com" method="POST" enctype="text/plain">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" name="Name" placeholder="Your Name" required>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section class="section-pad bg-light-blue" id="why-us">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-eyebrow">Our Edge</span>
+          <h2 class="section-title">Why Choose Pixiu Trading?</h2>
+          <p class="section-sub">We don't just sell products — we deliver reliability, quality, and value to your doorstep.</p>
+        </div>
+        <div class="row g-4 mt-3 justify-content-center">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="why-card text-center">
+              <div class="why-icon-wrap"><i class="fa-solid fa-receipt"></i></div>
+              <h5>BIR-Compliant Paper</h5>
+              <p>Our thermal rolls meet BIR requirements, ensuring your POS receipts and transactions are always valid and legally compliant.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-card text-center">
+              <div class="why-icon-wrap"><i class="fa-solid fa-truck-fast"></i></div>
+              <h5>Fast Nationwide Delivery</h5>
+              <p>Based in Tayabas, Quezon — we deliver across Metro Manila and provincial destinations quickly and reliably.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="why-card text-center">
+              <div class="why-icon-wrap"><i class="fa-solid fa-boxes-stacked"></i></div>
+              <h5>Bulk Order Friendly</h5>
+              <p>Special pricing for wholesale and bulk orders. Perfect for businesses, retail stores, LGUs, and government agencies.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="why-card text-center">
+              <div class="why-icon-wrap"><i class="fa-solid fa-handshake"></i></div>
+              <h5>Trusted LGU Partner</h5>
+              <p>Proud partner with JJIM Trading in supplying LGU offices. We have the track record to handle government procurement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT US ==================== -->
+    <section class="section-pad" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-duration="900">
+            <img src="./assets/truck.jpg" alt="Pixiu Trading Delivery" class="about-img rounded-4 w-100">
+          </div>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-duration="900">
+            <span class="section-eyebrow">Our Story</span>
+            <h2 class="section-title">About Pixiu Trading</h2>
+            <p>Pixiu Trading is a <strong>Filipino-owned business</strong> located in <strong>Tayabas, Quezon</strong>, officially launched on <strong>July 28, 2023</strong>. Founded by a former member of the Philippine National Police and later the Bangko Sentral ng Pilipinas, our founder followed his entrepreneurial passion to build a business rooted in service and quality.</p>
+            <p>We specialize in <strong>thermal paper rolls</strong>, office supplies, sports equipment, and customized items — practical solutions that streamline and support your everyday business operations.</p>
+            <p>We are proud partners with <strong>JJIM Trading</strong>, a trusted supplier of office equipment and business essentials to LGU offices across the region. Together, we deliver quality and consistency to every client we serve.</p>
+            <div class="about-highlights d-flex flex-wrap gap-3 mt-4">
+              <div class="highlight-chip"><i class="fa-solid fa-location-dot me-1"></i> Tayabas, Quezon</div>
+              <div class="highlight-chip"><i class="fa-solid fa-calendar me-1"></i> Est. July 28, 2023</div>
+              <div class="highlight-chip"><i class="fa-solid fa-flag me-1"></i> Filipino-Owned</div>
+              <div class="highlight-chip"><i class="fa-solid fa-handshake me-1"></i> JJIM Trading Partner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== HOW TO ORDER ==================== -->
+    <section class="section-pad bg-light-blue" id="how-to-order">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-eyebrow">Simple Process</span>
+          <h2 class="section-title">How to Order</h2>
+          <p class="section-sub">Getting your thermal paper and supplies is quick and easy.</p>
+        </div>
+        <div class="row g-4 mt-2 justify-content-center">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="order-step text-center">
+              <div class="step-number">01</div>
+              <div class="step-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+              <h5>Browse &amp; Inquire</h5>
+              <p>Browse our product list and reach out via Facebook, email, or Shopee to ask about availability and pricing.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="order-step text-center">
+              <div class="step-number">02</div>
+              <div class="step-icon"><i class="fa-solid fa-file-invoice"></i></div>
+              <h5>Get a Quotation</h5>
+              <p>We'll send you a formal quotation with pricing, quantity options, and delivery timeline. Bulk discounts available.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="order-step text-center">
+              <div class="step-number">03</div>
+              <div class="step-icon"><i class="fa-solid fa-truck-fast"></i></div>
+              <h5>Confirm &amp; Deliver</h5>
+              <p>Confirm your order, complete payment, and we'll deliver your supplies straight to your door — fast and secure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section-pad" id="contact">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
+            <span class="section-eyebrow">Get In Touch</span>
+            <h2 class="section-title">Request a Quote or Send an Inquiry</h2>
+            <p class="mb-4">Have questions about our products or need a custom quotation? Reach out — we typically respond within the day.</p>
+            <div class="contact-info d-flex flex-column gap-3">
+              <div class="contact-info-item">
+                <i class="fa-solid fa-envelope text-primary"></i>
+                <span><a href="mailto:cs@pixiutrading.com">cs@pixiutrading.com</a></span>
               </div>
-              <div class="form-group col-md-6 mt-3">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="Email" placeholder="Your Email" required>
+              <div class="contact-info-item">
+                <i class="fa-brands fa-facebook text-primary"></i>
+                <span><a href="https://www.facebook.com/PixiuTrading" target="_blank">facebook.com/PixiuTrading</a></span>
+              </div>
+              <div class="contact-info-item">
+                <i class="fa-solid fa-store text-primary"></i>
+                <span><a href="https://shopee.ph/pixiutrading#product_list" target="_blank">Shopee: pixiutrading</a></span>
+              </div>
+              <div class="contact-info-item">
+                <i class="fa-solid fa-location-dot text-primary"></i>
+                <span>Tayabas, Quezon, Philippines</span>
               </div>
             </div>
-            <div class="form-group mt-3">
-              <label for="message">Message</label>
-              <textarea class="form-control" id="message" name="Message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800">
+            <div class="contact-form-wrap">
+              <form action="mailto:cs@pixiutrading.com" method="POST" enctype="text/plain">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="Name" placeholder="Juan dela Cruz" required>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="Email" placeholder="juan@example.com" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="phone" class="form-label">Phone Number <span class="text-muted">(optional)</span></label>
+                    <input type="tel" class="form-control" id="phone" name="Phone" placeholder="+63 9XX XXX XXXX">
+                  </div>
+                  <div class="col-12">
+                    <label for="product" class="form-label">Product of Interest</label>
+                    <select class="form-select" id="product" name="Product">
+                      <option value="">-- Select a product --</option>
+                      <option value="Thermal Paper Rolls">Thermal Paper Rolls</option>
+                      <option value="Office Supplies">Office Supplies</option>
+                      <option value="Sports Supplies">Sports Supplies</option>
+                      <option value="Customized Shirts">Customized Shirts</option>
+                      <option value="Imported Products">Imported Products</option>
+                      <option value="Other">Other / Multiple Products</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message / Inquiry</label>
+                    <textarea class="form-control" id="message" name="Message" rows="4"
+                      placeholder="Tell us what you need — quantity, size, delivery location, etc." required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-accent btn-lg w-100">Send Message <i class="fa-solid fa-paper-plane ms-2"></i></button>
+                  </div>
+                </div>
+              </form>
             </div>
-            <button type="submit" class="btn btn-primary mt-3">Send Message</button>
-          </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- ==================== FOOTER ==================== -->
   <footer>
-    <section class="container-md">
-      <div class="row">
-        <div class="col-xs-12 col-md-6 d-flex flex-row justify-content-sm-center justify-content-md-start">
-          <h5 class="m-0 d-flex align-items-center">Connect with us:</h5>
-          <div class="d-flex align-items-center">
-              <a href="https://www.facebook.com/PixiuTrading" target="_blank" class="btn d-flex align-items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 448 512" fill="white"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>
-                Facebook
-              </a>
+    <div class="container">
+      <div class="row g-4 align-items-start">
 
-              <a href="https://shopee.ph/pixiutrading#product_list" target="_blank" class="btn d-flex align-items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 512" fill="white"><path d="M36.8 192l566.3 0c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0L121.7 0c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224l0 160 0 80c0 26.5 21.5 48 48 48l224 0c26.5 0 48-21.5 48-48l0-80 0-160-64 0 0 160-192 0 0-160-64 0zm448 0l0 256c0 17.7 14.3 32 32 32s32-14.3 32-32l0-256-64 0z"/></svg>
-                Shopee
-              </a>
-
-              <a href="mailto:cs@pixiutrading.com" target="_blank" class="btn d-flex align-items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512" fill="white"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
-                Email
-              </a>
+        <!-- Brand -->
+        <div class="col-lg-4">
+          <a href="#" class="d-flex align-items-center gap-2 footer-brand mb-2">
+            <img src="./assets/pixiu_logo.png" alt="Pixiu Trading" height="45">
+            <span>Pixiu Trading</span>
+          </a>
+          <p class="footer-tagline">Your trusted thermal paper and business supplies partner in the Philippines.</p>
+          <div class="footer-socials mt-3">
+            <a href="https://www.facebook.com/PixiuTrading" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://shopee.ph/pixiutrading#product_list" target="_blank" title="Shopee"><i class="fa-solid fa-store"></i></a>
+            <a href="mailto:cs@pixiutrading.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
-        <div class="col-xs-12 col-md-6 d-flex align-items-center justify-content-sm-center justify-content-md-end gap-2">
-          <span> &copy; <span id="year-reserved"></span> Pixiu Trading. All rights reserved. </span>
+
+        <!-- Quick Links -->
+        <div class="col-sm-6 col-lg-4">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#how-to-order">How to Order</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
         </div>
+
+        <!-- Products -->
+        <div class="col-sm-6 col-lg-4">
+          <h6 class="footer-heading">Our Products</h6>
+          <ul class="footer-links">
+            <li><a href="#products">Thermal Paper Rolls</a></li>
+            <li><a href="#products">Office Supplies</a></li>
+            <li><a href="#products">Sports Supplies</a></li>
+            <li><a href="#products">Customized Shirts</a></li>
+            <li><a href="#products">Imported Products</a></li>
+          </ul>
+        </div>
+
       </div>
-    </section>
+      <hr class="footer-divider">
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <span>&copy; <span id="year-reserved"></span> Pixiu Trading. All rights reserved.</span>
+        <span>Tayabas, Quezon, Philippines</span>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    AOS.init({ once: true });
+    document.getElementById('year-reserved').textContent = new Date().getFullYear();
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('mainNav');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
-<script>
-AOS.init();
-const yearReserved = document.getElementById('year-reserved');
-const currentYear = new Date().getFullYear();
-yearReserved.textContent = currentYear;
-</script>
 </html>
