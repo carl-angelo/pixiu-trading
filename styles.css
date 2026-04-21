@@ -136,7 +136,7 @@ img { max-width: 100%; display: block; }
 /* ==================== HERO ==================== */
 .hero-section {
   position: relative;
-  background: url('./assets/thermal1.jpg') center / cover no-repeat;
+  background: url('./assets/thermal-factory.jpeg') center / cover no-repeat;
   min-height: 580px;
   display: flex;
   align-items: center;
